@@ -1,0 +1,12 @@
+@use "./../../foundation/mixin" as *;
+
+.p-flex {
+  &__footer {
+    display: inherit;
+    @include breakpoint(tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@use "./../../foundation/mixin" as *;
+
+.p-content {
+  &__info {
+    width: 100%;
+    padding: 30px 0 20px;
+    background-color: #807c7c;
+  }
+}

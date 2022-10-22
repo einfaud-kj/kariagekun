@@ -1,0 +1,11 @@
+@use "./../../foundation/mixin" as *;
+
+.p-nav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  @include breakpoint(tablet) {
+    margin-right: 15px;
+    align-items: center;
+  }
+}

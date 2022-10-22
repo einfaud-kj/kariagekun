@@ -1,0 +1,22 @@
+@use "./../../foundation/mixin" as *;
+
+.c-menu {
+  &__priceboard {
+    background-color: gainsboro;
+    margin: 0 auto;
+    padding: 20px;
+    width: 76vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__title {
+    text-align: left;
+    font-size: 2.2rem;
+    width: 335px;
+  }
+  &__price {
+    text-align: right;
+    font-size: 2.2rem;
+  }
+}
