@@ -1,0 +1,26 @@
+@use "./../../foundation/mixin" as *;
+
+.c-image {
+    &__right{
+    width: 96px;
+    height: 171px;
+    transform: rotate( -129deg );
+
+    @include breakpoint(tablet) {
+        width: 158px;
+        height: 281px;
+        transform: rotate( -129deg );
+    }
+}
+&__left {
+    width: 96px;
+    height: 171px;
+    transform: rotate( -232deg );
+
+    @include breakpoint(tablet) {
+        width: 158px;
+        height: 281px;
+        transform: rotate( -232deg );
+    }
+}
+}

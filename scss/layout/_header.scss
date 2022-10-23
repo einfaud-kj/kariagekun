@@ -1,11 +1,9 @@
 @use "./../foundation/mixin" as *;
 
 .l-header {
-  background-color: rgb(247, 239, 229);
-  padding: 15px 0 30px 0;
+ display: none;
   @include breakpoint(tablet) {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 10px;
+    display: block;
+    height: 125px;
   }
 }

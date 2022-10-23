@@ -1,0 +1,19 @@
+@use "./../../foundation/mixin" as *;
+
+.c-flex {
+    display: flex;
+    &__header {
+        @include breakpoint(tablet) {
+            display: flex;
+
+        }
+    }
+    
+    &__menuset {
+        display: flex;
+    }
+
+    &__reserve {
+        display: flex;
+    }
+}

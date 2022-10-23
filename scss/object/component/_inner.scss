@@ -1,7 +1,8 @@
 @use "./../../foundation/mixin" as *;
 
 .c-inner {
-  padding: 30px 20px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 20px 14.5px 0;
+  @include breakpoint(tablet) {
+    margin: 0 110px 20px 310px;
+  }
 }

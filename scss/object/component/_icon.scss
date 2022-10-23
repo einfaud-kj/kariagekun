@@ -1,0 +1,45 @@
+@use "./../../foundation/mixin" as *;
+
+.c-icon {
+    &__header {
+    width: 52px;
+    height: 92px;
+    transform: rotate( 41deg );
+   
+}
+&__scissors {
+    width: 35px;
+    height: 82px;
+    @include breakpoint(tablet){
+        width: 75px;
+        height: 176px;
+    }
+}
+&__pole {
+    width: 122px;
+    height: 64px;
+    @include breakpoint(tablet){
+        width: 145px;
+        height: 125px;
+    }
+}
+&__chair {
+    width: 69px;
+    height: 69px;
+    @include breakpoint(tablet){
+        width: 145px;
+        height: 145px;
+    }
+}
+}
+
+.c-icon {
+&__netreserve,
+&__telreserve{
+width: 128px;
+height: 128px;
+@include breakpoint(tablet) {
+    display: none;
+}
+}
+}

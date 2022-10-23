@@ -1,0 +1,10 @@
+@use "./../../foundation/mixin" as *;
+
+.c-card__img {
+   
+    height: 300px;
+    @include breakpoint(tablet) {
+        width: 761px;
+        height: 655px;
+    }
+}

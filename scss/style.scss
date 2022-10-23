@@ -32,16 +32,26 @@
 @use "./object/component/inner";
 @use "./object/component/address";
 @use "./object/component/table";
+@use "./object/component/card";
+@use "./object/component/flex";
+@use "./object/component/icon";
+@use "./object/component/image";
+@use "./object/component/menuset";
+@use "./object/component/name";
+@use "./object/component/price";
+@use "./object/component/subtitle";
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
 @use "./object/project/content";
-@use "./object/project/logo";
-@use "./object/project/maintitle";
 @use "./object/project/mainvisual";
-@use "./object/project/nav";
-@use "./object/project/flex";
+@use "./object/project/access";
+@use "./object/project/businessday";
+@use "./object/project/info";
+@use "./object/project/pricemenu";
+@use "./object/project/serviceflow";
+
 
 // // -----------------------------------------------------------------
 // // Utility

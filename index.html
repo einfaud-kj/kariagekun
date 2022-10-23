@@ -11,36 +11,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <title>かりあげくん.</title>
+    <title>かりあげくん</title>
 </head>
 
 <body>
     <header class="l-header">
-        <div class="p-logo__left">
-            <p class="c-text__subtitle">昔ながらの床屋さん</p>
-            <h1 class="p-logo__title">かりあげくん</h1>
+        <div class="c-flex__header">
+            <img src="./img/8125.png" alt="ハサミのアイコン" class="c-icon__header">
+            <h2 class="c-title__netreserve"><a href="https://liff.line.me/1657410796-OkYXo4wo?liff_id=1657410796-OkYXo4wo&is=w2BxKg2c4F">ネット予約</a></h2>  
+            <img src="./img/8125.png" alt="ハサミのアイコン" class="c-icon__header">
+            <h2 class="c-title__telreserve"><a href="tel:059-352-5203">電話予約</a></h2>
         </div>
-        <div class="p-nav">
-            <p class="c-text__nav"><a href="#price">料金表</a></p>
-            <p class="c-text__nav"><a href="#access">アクセス</a></p>
-            <p class="c-text__nav"><a href="tel:0593525203">予約はこちら</a></p>
-        </div>
+    
     </header>
 
     <main class="l-main">
-        <article>
-            <section class="p-maintitle">
-                <h2 class="c-title__main">
-                    ５０年の経験を持つ<br>
-                    ベテラン理容師が営む<br>
-                    <span>完全予約制</span>の床屋です
-                </h2>
-                <img src="./img/853804_m.jpg" alt="メインビジュアル" class="p-mainvisual">
+        
+            
+               
+                <img src="./img/mainvisual.png" alt="メインビジュアル" class="p-mainvisual">
+                <article class="c-inner">
+            <section class="p-info">
+                <div class="c-flex" >
+                    <img class="c-icon__scissors" src="./img/8124.png" alt="お知らせ">
+                    <h2 class="c-title">お知らせ</h2>
+                </div>
+                    <p class="c-text__info">○○月○○日～〇〇月○○日までお休みします</p>
+                    <p class="c-text__info">○○月○○日～〇〇月○○日までお休みします</p>
+               
             </section>
-
-            <section class="p-content__info">
-                <div class="c-inner__info">
-                    <h3 class="c-title__logotext">昔ながらの床屋さん<br><span>かりあげくん</span></h3>
+                <section class="p-businessday">
+                    <div class="c-flex" > 
+                        <img class="c-icon__pole" src="./img/Barber Pole free icons designed by fjstudio.png" alt="営業日・時間">
+                        <h2 class="c-title">営業日・時間</h2>
+                        </div>
                     <table class="c-table__info">
                         <tbody>
                             <tr>
@@ -65,84 +69,129 @@
 
                         </tbody>
                     </table>
-                </div>
-
-
-            </section>
-            <div class="c-inner">
-
-                <section class="p-content__calendar">
-                    <!-- <h3 class="c-title__calendar">カレンダー</h3> -->
-                    <h3 class="c-title__info">お知らせ</h3>
-                    <ul>
-                        <li>○○月○○日　××××</li>
-                        <li>○○月○○日　××××</li>
-                    </ul>
-
-                    <!--calenderを入れ込む-->
-                    <!-- <a href="">ご予約はこちらから</a> -->
+                </section>
+ <section id="price" class="p-menu">
+    <div class="c-flex" > 
+        <img class="c-icon__scissors" src="./img/8124.png" alt="MENU">
+        <h2 class="c-title">ＭＥＮＵ</h2>
+        </div>
+        <div class="c-pricemenu">
+            <li class="c-flex__menuset">
+                <p class="c-name">大人調髪</p>
+                <p class="c-price">２３００円</p>
+            </li>
+            <li class="c-flex__menuset">
+                <p class="c-name">高校生</p>
+                <p class="c-price">２１００円</p>
+            </li>
+            <li class="c-flex__menuset">
+                <p class="c-name">中学生</p>
+                <p class="c-price">２０００円</p>
+            </li>
+            <li class="c-flex__menuset">
+                <p class="c-name">子供</p>
+                <p class="c-price">１８００円</p>
+            </li>
+        </div>
+         <div class="c-pricemenu">
+            <li class="c-flex__menuset">
+                <p class="c-name">スポーツ刈り</p>
+                <p class="c-price">２７００円</p>
+            </li>
+            <li class="c-flex__menuset">
+                <p class="c-name">丸刈り</p>
+                <p class="c-price">２０００円</p>
+            </li>
+            <li class="c-flex__menuset">
+                <p class="c-name">顔剃り</p>
+                <p class="c-price">２０００円</p>
+            </li>
+            <li class="c-flex__menuset">
+                <p class="c-name">毛染め</p>
+                <p class="c-price">４３００円～</p>
+            </li>
+        </div>
                 </section>
 
-                <section id="price" class="p-content__price">
-                    <h3 class="c-title__price">ＭＥＮＵ　＆　料金表</h3>
-                    <dl class="c-menu__priceboard">
-                        <dt class="c-menu__title">大人調髪</dt>
-                        <dd class="c-menu__price">￥2.300　</dd>
-                        <dt class="c-menu__title">高校生</dt>
-                        <dd class="c-menu__price">￥2.100　</dd>
-                        <dt class="c-menu__title">中学生</dt>
-                        <dd class="c-menu__price">￥2.000　</dd>
-                        <dt class="c-menu__title">子供</dt>
-                        <dd class="c-menu__price">￥1.800　</dd>
+                <section class="p-serviceflow">
+                    <div class="c-flex" > 
+                        <img class="c-icon__chair" src="./img/barberschair_barberos_4119.png" alt="サービスの流れ">
+                        <h2 class="c-title">サービスの流れ</h2>
+                        </div>
+                        <figure class="c-card__flex">
+                            <div class="c-card__img">
+                                <img src="./img/85380400_m.jpg" alt="カット">
+                            </div>
+                            <figcaption class="c-card__article">
+                                <h2 class="c-title__serviceflow">１．まずはカットから</h2>
+                                <p class="c-card__text">お客様のオーダーに合わせてカットいたします。</p>
+                            </figcaption>
+                        </figure>
+                        <div class="c-image__right">
+                            <img src="./img/8125.png" alt="">
+                        </div>
+                        <figure class="c-card__flex">
+                            <div class="c-card__img">
+                                <img src="./img/adam-winger-WDmvpGs2060-unsplash.jpg" alt="シャンプー">
+                            </div>
+                            <figcaption class="c-card__article">
+                                <h2 class="c-title__serviceflow">２．次にシャンプー</h2>
+                                <p class="c-card__text">ちょうどいい手加減で切った髪をお洗い落します。</p>
+                            </figcaption>
+                        </figure>
+                        <div class="c-image__left">
+                            <img src="./img/8125.png" alt="">
+                        </div>
+                        <figure class="c-card__flex">
+                            <div class="c-card__img">
+                                <img src="./img/barber-gcf28185a1_1280.jpg" alt="髭剃り">
+                            </div>
+                            <figcaption class="c-card__article">
+                                <h2 class="c-title__serviceflow">３．最後に髭剃り</h2>
+                                <p class="c-card__text">床屋といえば正にこれ。顔もさっぱりに仕上がります。</p>
+                            </figcaption>
+                        </figure>
+                        </section>
 
-                        <dt class="c-menu__title">
-                            <ruby>
-                                <rb>総鋏み</rb>
-                                <rt>そうばさみ</rt>
-                            </ruby>スポーツ刈り
-                        </dt>
-                        <dd class="c-menu__price">￥2.700　</dd>
-                        <dt class="c-menu__title">丸刈り</dt>
-                        <dd class="c-menu__price">￥2.000　</dd>
-                        <dt class="c-menu__title">顔剃り＊女性OK
-                        </dt>
-                        <dd class="c-menu__price">￥2.000　</dd>
-                        <dt class="c-menu__title">毛染め</dt>
-                        <dd class="c-menu__price">￥4.300～</dd>
-                    </dl>
-                </section>
-            </div>
+                        <section class="p-access">
+                            <div class="c-flex" > 
+                                <img class="c-icon__scissors" src="./img/8124.png" alt="アクセス">
+                                <h2 class="c-title">アクセス</h2>
+                                </div>
+                                <div class="c-flex__access">
+                                    <!-- googlemap を埋め込む-->
+                                    <iframe class="c-googlemap"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1242.5077648944857!2d136.62332140070401!3d34.96810081092886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60038efaadff8da5%3A0x6b4163d2783ba10a!2z44GL44KK44GC44GS44GP44KT!5e0!3m2!1sja!2sjp!4v1657608843445!5m2!1sja!2sjp"
+                                        width="346" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                    <div class="c-address">
+                                        <h2 class="c-title__shopname">かりあげくん</h2>
+                                        <h3 class="c-subtitle__address">住所</h3>
+                                        <p class="c-text__address">四日市市諏訪栄町22-37吉田ビル1F　通路奥</p>
+                                        <h3 class="c-subtitle__tel">電話番号</h3>
+                                        <p class="c-text__tel">059-352-5203</p>
+                                    </div>
+                                </div>
+                        </section>
         </article>
     </main>
 
     <footer class="l-footer">
-        <h3 id="access" class="c-title__access">アクセス</h3>
-        <section class="p-flex__footer">
-            <div class="c-address__div">
-                <!-- googlemap を埋め込む-->
-                <iframe class="c-address__googlemap"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1242.5077648944857!2d136.62332140070401!3d34.96810081092886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60038efaadff8da5%3A0x6b4163d2783ba10a!2z44GL44KK44GC44GS44GP44KT!5e0!3m2!1sja!2sjp!4v1657608843445!5m2!1sja!2sjp"
-                    width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 class="c-title__reserve">予約はこちらから</h2>
+        <div class="c-flex__reserve">
+            <div class="c-content__net">
+            <img class="c-icon__netreserve" src="./img/calendaricon.png" alt="">
+            <p class="c-text__netreserve">ネット予約</p>
             </div>
-            <div class="c-address__inner">
-                <dl class="c-address__dl">
-                    <dt class="c-address__title">名称</dt>
-                    <dd class="c-address__text">かりあげくん</dd>
-                    <dt class="c-address__title">住所</dt>
-                    <dd class="c-address__text">四日市市諏訪栄町２２番３７号　吉田ビル</dd>
-                    <dt class="c-address__title">電話番号</dt>
-                    <dd class="c-address__text"><a href="tel:0593525203">059-352-5203</a></dd>
-                    <small>&copy;2022 forstart</small>
-                </dl>
-                <!-- <a href="https://lin.ee/8iRnAwD">ラインアカウント追加はこちらから</a> -->
-                <!-- <a href="https://lin.ee/8iRnAwD"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"
-                    alt="友だち追加" height="36" border="0"></a> -->
-
-
+            <div class="c-content__tel">
+            <img class="c-icon__telreserve" src="./img/spicon.png" alt="">
+            <p class="c-text__netreserve">電話予約</p>
             </div>
-        </section>
-        <p id="page-top"><a href="#">Page Top</a></p>
+        </div>
+       
+        
+       
     </footer>
     <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
