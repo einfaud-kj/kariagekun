@@ -1,7 +1,32 @@
 @use "./../../foundation/mixin" as *;
 
 .c-title {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   padding-left: 10px;
+
+  &__serviceflow {
+    margin: 53px 0 15px;
+    letter-spacing: 2.5px;
+  }
+
+  &__shopname {
+    margin: 32px 0 13px 0;
+  }
+
+  &__reserve {
+   text-align: center;
+    letter-spacing: 7px;
+    padding-top: 5px;
+    &::after {
+      content: "";
+      width: 3px;
+      height: 70px;
+      display: inline-block;
+      background-color: #000000;
+      position: absolute;
+      bottom: 14px;
+      left: 50%
+    }
+  }
  
 }

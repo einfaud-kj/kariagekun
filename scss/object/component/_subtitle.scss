@@ -1,1 +1,22 @@
 @use "./../../foundation/mixin" as *;
+
+.c-subtitle {
+    &__address,
+    &__tel {
+        letter-spacing: 5px;
+        position: relative;
+    }
+
+    &__address::after,
+    &__tel::after {
+        content: "";
+        width: 90px;
+        height: 4px;
+        display: inline-block;
+        background-color: #000000;
+        position: absolute;
+        bottom: -5px;
+        left: calc(16% - 55px)
+    }
+
+}

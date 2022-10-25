@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:before,
 *:after {
@@ -15,7 +16,7 @@ html {
 body {
   color: #333;
   font-size: 1.6rem;
-  font-family: "M PLUS 1p", "Noto Sans JP", sans-serif;
+  font-family: "游ゴシック", "Noto Sans JP", sans-serif;
   min-width: 350px;
   width: 100%;
   overflow-x: hidden;
@@ -54,6 +55,21 @@ li {
   list-style: none;
 }
 
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.l-footer {
+  background-color: #fff019;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
 .l-header {
   display: none;
 }
@@ -64,13 +80,53 @@ li {
   }
 }
 
+.l-main {
+  margin-bottom: 145px;
+}
+
+.c-button__net, .c-button__tel {
+  width: 100%;
+  border: 2px solid black;
+}
+
 .c-title {
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   padding-left: 10px;
+}
+.c-title__serviceflow {
+  margin: 53px 0 15px;
+  letter-spacing: 2.5px;
+}
+.c-title__shopname {
+  margin: 32px 0 13px 0;
+}
+.c-title__reserve {
+  text-align: center;
+  letter-spacing: 7px;
+  padding-top: 5px;
+}
+.c-title__reserve::after {
+  content: "";
+  width: 3px;
+  height: 70px;
+  display: inline-block;
+  background-color: #000000;
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
 }
 
 .c-text__info {
   padding-bottom: 15px;
+}
+.c-text__address, .c-text__tel {
+  letter-spacing: 6px;
+  line-height: 2.5;
+  margin-top: 10px;
+}
+.c-text__netreserve, .c-text__telreserve {
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .c-menu__priceboard {
@@ -179,11 +235,33 @@ li {
     height: 655px;
   }
 }
+.c-card__text {
+  margin: 0 10px 0;
+  line-height: 3;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
 
-.c-flex {
+.c-flex__info, .c-flex__pricemenu, .c-flex__access {
   display: flex;
   align-items: center;
-  padding: 0 0 25px 15px;
+  padding-left: 3px;
+  margin: 0 110px 25px 0;
+  background: linear-gradient(92deg, #fff019, #fff);
+}
+.c-flex__dayandtime {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  margin: 0 50px 25px 0;
+  background: linear-gradient(92deg, #fff019, #fff);
+}
+.c-flex__serviceflow {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  margin: 0 10px 25px 0;
+  background: linear-gradient(92deg, #fff019, #fff);
 }
 @media (min-width: 600px) {
   .c-flex__header {
@@ -196,6 +274,7 @@ li {
 }
 .c-flex__reserve {
   display: flex;
+  justify-content: space-around;
 }
 
 .c-icon__header {
@@ -206,6 +285,7 @@ li {
 .c-icon__scissors {
   width: 35px;
   height: 82px;
+  background: linear-gradient(92deg, #fff019, #fff);
 }
 @media (min-width: 600px) {
   .c-icon__scissors {
@@ -217,6 +297,8 @@ li {
   width: 122px;
   height: 64px;
   margin: 0 -40px 0 -46px;
+  background: linear-gradient(92deg, #fff019, #fff);
+  background-position-x: 40px;
 }
 @media (min-width: 600px) {
   .c-icon__pole {
@@ -227,6 +309,7 @@ li {
 .c-icon__chair {
   width: 69px;
   height: 69px;
+  background: linear-gradient(92deg, #fff019, #fff);
 }
 @media (min-width: 600px) {
   .c-icon__chair {
@@ -236,8 +319,9 @@ li {
 }
 
 .c-icon__netreserve, .c-icon__telreserve {
-  width: 128px;
-  height: 128px;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
 }
 @media (min-width: 600px) {
   .c-icon__netreserve, .c-icon__telreserve {
@@ -246,24 +330,30 @@ li {
 }
 
 .c-image__right {
+  display: flex;
+  justify-content: flex-end;
+}
+.c-image__right > img {
   width: 96px;
   height: 171px;
   transform: rotate(-129deg);
+  margin: 30px 40px -25px 0;
 }
 @media (min-width: 600px) {
-  .c-image__right {
+  .c-image__right > img {
     width: 158px;
     height: 281px;
     transform: rotate(-129deg);
   }
 }
-.c-image__left {
+.c-image__left > img {
   width: 96px;
   height: 171px;
   transform: rotate(-232deg);
+  margin: 30px 0 -25px 50px;
 }
 @media (min-width: 600px) {
-  .c-image__left {
+  .c-image__left > img {
     width: 158px;
     height: 281px;
     transform: rotate(-232deg);
@@ -294,6 +384,21 @@ li {
   text-align: right;
   letter-spacing: -13px;
   margin-right: -20px;
+}
+
+.c-subtitle__address, .c-subtitle__tel {
+  letter-spacing: 5px;
+  position: relative;
+}
+.c-subtitle__address::after, .c-subtitle__tel::after {
+  content: "";
+  width: 90px;
+  height: 4px;
+  display: inline-block;
+  background-color: #000000;
+  position: absolute;
+  bottom: -5px;
+  left: calc(16% - 55px);
 }
 
 .c-wrapper {
@@ -328,6 +433,10 @@ li {
 }
 
 .p-pricemenu {
+  margin-bottom: 40px;
+}
+
+.p-serviceflow {
   margin-bottom: 40px;
 }
 

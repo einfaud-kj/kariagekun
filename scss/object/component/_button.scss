@@ -1,0 +1,9 @@
+@use "./../../foundation/mixin" as *;
+
+.c-button {
+    &__net,
+    &__tel {
+        width: 100%;
+        border: 2px solid black;
+    }
+}

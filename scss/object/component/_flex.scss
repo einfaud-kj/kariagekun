@@ -1,10 +1,32 @@
 @use "./../../foundation/mixin" as *;
 
 .c-flex {
+    &__info,    
+    &__pricemenu,   
+    &__access {
     display: flex;
     align-items: center;
-    padding: 0 0 25px 15px;
-    
+    padding-left: 3px;
+    margin:0 110px 25px 0;
+    background: linear-gradient(92deg, #fff019, #fff);
+    }
+
+    &__dayandtime {
+        display: flex;
+    align-items: center;
+    padding-left: 3px;
+    margin:0 50px 25px 0;
+    background: linear-gradient(92deg, #fff019, #fff);
+    }
+
+    &__serviceflow {
+        display: flex;
+        align-items: center;
+        padding-left: 3px;
+        margin:0 10px 25px 0;
+        background: linear-gradient(92deg, #fff019, #fff);
+    }
+
     &__header {
         @include breakpoint(tablet) {
             display: flex;
@@ -19,5 +41,6 @@
 
     &__reserve {
         display: flex;
+        justify-content: space-around;
     }
 }

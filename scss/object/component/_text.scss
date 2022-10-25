@@ -4,4 +4,17 @@
   &__info {
     padding-bottom: 15px;
   }
+
+  &__address,
+  &__tel {
+    letter-spacing: 6px;
+    line-height: 2.5;
+    margin-top: 10px;
+  }
+
+  &__netreserve,
+  &__telreserve {
+    letter-spacing: 2px;
+    text-align: center;
+  }
 }

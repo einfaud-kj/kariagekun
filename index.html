@@ -32,7 +32,7 @@
                 <img src="./img/mainvisual.png" alt="メインビジュアル" class="p-mainvisual">
                 <article class="c-inner">
             <section class="p-info">
-                <div class="c-flex" >
+                <div class="c-flex__info" >
                     <img class="c-icon__scissors" src="./img/8124.png" alt="お知らせ">
                     <h2 class="c-title">お知らせ</h2>
                 </div>
@@ -41,7 +41,7 @@
                
             </section>
                 <section class="p-businessday">
-                    <div class="c-flex" > 
+                    <div class="c-flex__dayandtime" > 
                         <img class="c-icon__pole" src="./img/Barber Pole free icons designed by fjstudio.png" alt="営業日・時間">
                         <h2 class="c-title">営業日・時間</h2>
                         </div>
@@ -71,7 +71,7 @@
                     </table>
                 </section>
  <section id="price" class="p-pricemenu">
-    <div class="c-flex" > 
+    <div class="c-flex__pricemenu" > 
         <img class="c-icon__scissors" src="./img/8124.png" alt="MENU">
         <h2 class="c-title">ＭＥＮＵ</h2>
         </div>
@@ -116,7 +116,7 @@
                 </section>
 
                 <section class="p-serviceflow">
-                    <div class="c-flex" > 
+                    <div class="c-flex__serviceflow" > 
                         <img class="c-icon__chair" src="./img/barberschair_barberos_4119.png" alt="サービスの流れ">
                         <h2 class="c-title">サービスの流れ</h2>
                         </div>
@@ -125,7 +125,7 @@
                                 <img src="./img/85380400_m.jpg" alt="カット">
                             </div>
                             <figcaption class="c-card__article">
-                                <h2 class="c-title__serviceflow">１．まずはカットから</h2>
+                                <h3 class="c-title__serviceflow">１.まずはカットから</h3>
                                 <p class="c-card__text">お客様のオーダーに合わせてカットいたします。</p>
                             </figcaption>
                         </figure>
@@ -137,8 +137,8 @@
                                 <img src="./img/adam-winger-WDmvpGs2060-unsplash.jpg" alt="シャンプー">
                             </div>
                             <figcaption class="c-card__article">
-                                <h2 class="c-title__serviceflow">２．次にシャンプー</h2>
-                                <p class="c-card__text">ちょうどいい手加減で切った髪をお洗い落します。</p>
+                                <h3 class="c-title__serviceflow">２．次にシャンプー</h3>
+                                <p class="c-card__text">ちょうどいい手加減で切った髪を洗い落します。</p>
                             </figcaption>
                         </figure>
                         <div class="c-image__left">
@@ -149,18 +149,18 @@
                                 <img src="./img/barber-gcf28185a1_1280.jpg" alt="髭剃り">
                             </div>
                             <figcaption class="c-card__article">
-                                <h2 class="c-title__serviceflow">３．最後に髭剃り</h2>
-                                <p class="c-card__text">床屋といえば正にこれ。顔もさっぱりに仕上がります。</p>
+                                <h3 class="c-title__serviceflow">３．最後に髭剃り</h3>
+                                <p class="c-card__text">床屋といえば正にこれ。<br>顔もさっぱりに仕上がります。</p>
                             </figcaption>
                         </figure>
                         </section>
 
                         <section class="p-access">
-                            <div class="c-flex" > 
+                            <div class="c-flex__access" > 
                                 <img class="c-icon__scissors" src="./img/8124.png" alt="アクセス">
                                 <h2 class="c-title">アクセス</h2>
                                 </div>
-                                <div class="c-flex__access">
+                                <div class="c-flex">
                                     <!-- googlemap を埋め込む-->
                                     <iframe class="c-googlemap"
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1242.5077648944857!2d136.62332140070401!3d34.96810081092886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60038efaadff8da5%3A0x6b4163d2783ba10a!2z44GL44KK44GC44GS44GP44KT!5e0!3m2!1sja!2sjp!4v1657608843445!5m2!1sja!2sjp"
@@ -168,10 +168,10 @@
                                         referrerpolicy="no-referrer-when-downgrade">
                                     </iframe>
                                     <div class="c-address">
-                                        <h2 class="c-title__shopname">かりあげくん</h2>
-                                        <h3 class="c-subtitle__address">住所</h3>
-                                        <p class="c-text__address">四日市市諏訪栄町22-37吉田ビル1F　通路奥</p>
-                                        <h3 class="c-subtitle__tel">電話番号</h3>
+                                        <h3 class="c-title__shopname">かりあげくん</h3>
+                                        <h4 class="c-subtitle__address">住所</h4>
+                                        <p class="c-text__address">四日市市諏訪栄町22-37<br>吉田ビル1F　通路奥</p>
+                                        <h4 class="c-subtitle__tel">電話番号</h4>
                                         <p class="c-text__tel">059-352-5203</p>
                                     </div>
                                 </div>
@@ -180,15 +180,19 @@
     </main>
 
     <footer class="l-footer">
-        <h2 class="c-title__reserve">予約はこちらから</h2>
+        <!-- <h2 class="c-title__reserve">予約はこちらから</h2> -->
         <div class="c-flex__reserve">
-            <div class="c-content__net">
+            <div class="c-button__net">
+                <a href="https://liff.line.me/1657410796-OkYXo4wo?liff_id=1657410796-OkYXo4wo&is=w2BxKg2c4F">
             <img class="c-icon__netreserve" src="./img/calendaricon.png" alt="">
             <p class="c-text__netreserve">ネット予約</p>
+                </a>
             </div>
-            <div class="c-content__tel">
+            <div class="c-button__tel">
+                <a href="tel:059-352-5203">
             <img class="c-icon__telreserve" src="./img/spicon.png" alt="">
-            <p class="c-text__netreserve">電話予約</p>
+            <p class="c-text__telreserve">電話予約</p>
+        </a>
             </div>
         </div>
        

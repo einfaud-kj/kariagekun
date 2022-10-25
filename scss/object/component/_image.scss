@@ -1,10 +1,15 @@
 @use "./../../foundation/mixin" as *;
 
 .c-image {
-    &__right{
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__right >img{
     width: 96px;
     height: 171px;
     transform: rotate( -129deg );
+    margin: 30px 40px -25px 0;
 
     @include breakpoint(tablet) {
         width: 158px;
@@ -12,10 +17,11 @@
         transform: rotate( -129deg );
     }
 }
-&__left {
+&__left >img {
     width: 96px;
     height: 171px;
     transform: rotate( -232deg );
+    margin: 30px 0 -25px 50px;
 
     @include breakpoint(tablet) {
         width: 158px;

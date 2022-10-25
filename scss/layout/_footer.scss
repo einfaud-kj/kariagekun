@@ -1,1 +1,8 @@
 @use "./../foundation/mixin" as *;
+
+.l-footer {
+    background-color: #fff019;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

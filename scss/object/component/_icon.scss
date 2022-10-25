@@ -10,6 +10,7 @@
 &__scissors {
     width: 35px;
     height: 82px;
+    background: linear-gradient(92deg, #fff019, #fff);
     @include breakpoint(tablet){
         width: 75px;
         height: 176px;
@@ -19,6 +20,8 @@
     width: 122px;
     height: 64px;
     margin:0 -40px 0 -46px;
+    background: linear-gradient(92deg, #fff019, #fff);
+    background-position-x: 40px;
     @include breakpoint(tablet){
         width: 145px;
         height: 125px;
@@ -27,6 +30,7 @@
 &__chair {
     width: 69px;
     height: 69px;
+    background: linear-gradient(92deg, #fff019, #fff);
     @include breakpoint(tablet){
         width: 145px;
         height: 145px;
@@ -37,8 +41,9 @@
 .c-icon {
 &__netreserve,
 &__telreserve{
-width: 128px;
-height: 128px;
+width: 50%;
+height: auto;
+margin: 0 auto;
 @include breakpoint(tablet) {
     display: none;
 }
