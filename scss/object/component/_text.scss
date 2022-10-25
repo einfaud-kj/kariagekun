@@ -1,26 +1,7 @@
 @use "./../../foundation/mixin" as *;
 
 .c-text {
-  &__subtitle {
-    font-weight: bold;
-    text-align: left;
-    padding: 25px 0 0 40px;
-    line-height: 0;
-    @include breakpoint(tablet) {
-      padding-left: 10px;
-      font-size: 2.4rem;
-    }
-  }
-  &__nav {
-    font-size: 1.8rem;
-    font-weight: bold;
-    @include breakpoint(tablet) {
-      padding: 0 15px;
-      font-size: 2.6rem;
-    }
-    @include breakpoint(pc) {
-      padding: 0 30px;
-      font-size: 3.2rem;
-    }
+  &__info {
+    padding-bottom: 15px;
   }
 }

@@ -1,1 +1,19 @@
 @use "./../../foundation/mixin" as *;
+
+.c-price {
+    color: white;
+    font-size: 3.2rem;
+    text-align: right;
+    letter-spacing: -13px;
+    margin-right: 11px;
+    margin-bottom: 40px;
+    &__last {
+        color: white;
+    font-size: 3.2rem;
+    text-align: right;
+    letter-spacing: -13px;
+        margin-right: -20px;
+    }
+
+}
+

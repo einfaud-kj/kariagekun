@@ -1,62 +1,7 @@
 @use "./../../foundation/mixin" as *;
 
 .c-title {
-  &__main {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    width: 100%;
-    color: aliceblue;
-    font-size: 3rem;
-    line-height: 1.4;
-    letter-spacing: -0.8px;
-    font-family: "Shippori Mincho B1", serif;
-    @include breakpoint(tablet) {
-      font-size: 4.2rem;
-    }
-    & > span {
-      color: red;
-      font-size: 3.6rem;
-      font-family: "Shippori Mincho B1", serif;
-    }
-  }
-  &__info,
-  &__calendar,
-  &__price,
-  &__access {
-    border: solid 1px black;
-    border-radius: 20px;
-    margin: 30px auto;
-    width: 70%;
-    height: 50px;
-    padding: 10px;
-    text-align: center;
-  }
-  &__logotext {
-    margin: 0 auto 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: 1.1;
-    color: white;
-    @include breakpoint(tablet) {
-      font-size: 2.4rem;
-    }
-    @include breakpoint(pc) {
-      font-size: 3.6rem;
-    }
-    & > span {
-      font-size: 2.6rem;
-      line-height: 1.8;
-      @include breakpoint(tablet) {
-        font-size: 4.6rem;
-        letter-spacing: 10px;
-        line-height: 1.6;
-      }
-      @include breakpoint(pc) {
-        font-size: 6.4rem;
-      }
-    }
-  }
+  letter-spacing: 5px;
+  padding-left: 10px;
+ 
 }

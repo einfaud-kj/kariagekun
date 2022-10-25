@@ -1,0 +1,9 @@
+@use "./../../foundation/mixin" as *;
+
+.u-span {
+padding-left: 7px;
+&__last {
+    padding-left: 12px;
+    
+}
+}

@@ -4,6 +4,7 @@
  
   height: 200px;
   margin-top: 20px;
+  margin-bottom: 60px;
   @include breakpoint(tablet) {
  
   height: 800px;

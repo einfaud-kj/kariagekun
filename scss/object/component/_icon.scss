@@ -18,6 +18,7 @@
 &__pole {
     width: 122px;
     height: 64px;
+    margin:0 -40px 0 -46px;
     @include breakpoint(tablet){
         width: 145px;
         height: 125px;

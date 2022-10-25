@@ -64,99 +64,13 @@ li {
   }
 }
 
-.c-title__main {
-  position: absolute;
-  bottom: 15px;
-  left: 20px;
-  width: 100%;
-  color: aliceblue;
-  font-size: 3rem;
-  line-height: 1.4;
-  letter-spacing: -0.8px;
-  font-family: "Shippori Mincho B1", serif;
-}
-@media (min-width: 600px) {
-  .c-title__main {
-    font-size: 4.2rem;
-  }
-}
-.c-title__main > span {
-  color: red;
-  font-size: 3.6rem;
-  font-family: "Shippori Mincho B1", serif;
-}
-.c-title__info, .c-title__calendar, .c-title__price, .c-title__access {
-  border: solid 1px black;
-  border-radius: 20px;
-  margin: 30px auto;
-  width: 70%;
-  height: 50px;
-  padding: 10px;
-  text-align: center;
-}
-.c-title__logotext {
-  margin: 0 auto 10px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-align: center;
-  letter-spacing: 3px;
-  line-height: 1.1;
-  color: white;
-}
-@media (min-width: 600px) {
-  .c-title__logotext {
-    font-size: 2.4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .c-title__logotext {
-    font-size: 3.6rem;
-  }
-}
-.c-title__logotext > span {
-  font-size: 2.6rem;
-  line-height: 1.8;
-}
-@media (min-width: 600px) {
-  .c-title__logotext > span {
-    font-size: 4.6rem;
-    letter-spacing: 10px;
-    line-height: 1.6;
-  }
-}
-@media (min-width: 1200px) {
-  .c-title__logotext > span {
-    font-size: 6.4rem;
-  }
+.c-title {
+  letter-spacing: 5px;
+  padding-left: 10px;
 }
 
-.c-text__subtitle {
-  font-weight: bold;
-  text-align: left;
-  padding: 25px 0 0 40px;
-  line-height: 0;
-}
-@media (min-width: 600px) {
-  .c-text__subtitle {
-    padding-left: 10px;
-    font-size: 2.4rem;
-  }
-}
-.c-text__nav {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-@media (min-width: 600px) {
-  .c-text__nav {
-    padding: 0 15px;
-    font-size: 2.6rem;
-  }
-}
-@media (min-width: 1200px) {
-  .c-text__nav {
-    padding: 0 30px;
-    font-size: 3.2rem;
-  }
+.c-text__info {
+  padding-bottom: 15px;
 }
 
 .c-menu__priceboard {
@@ -229,31 +143,31 @@ li {
   }
 }
 
-.c-table__info {
-  margin: 0 auto 10px;
+.c-table__infoday {
+  margin: 0 auto;
   color: rgb(0, 0, 0);
-  font-size: 1.6rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  border-top: 1px solid #807c7c;
+  border-bottom: 1px solid #807c7c;
 }
 @media (min-width: 600px) {
-  .c-table__info {
+  .c-table__infoday {
     font-size: 2.4rem;
   }
 }
-.c-table__info > tr:first-child, .c-table__info > td:first-child {
+.c-table__infoday > tr:first-child, .c-table__infoday > td:first-child {
   line-height: 1.4;
 }
-.c-table__info > tbody > tr:first-of-type > td {
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
-}
-.c-table__info > tbody > tr > td {
-  padding: 15px 10px;
+.c-table__infoday > tbody > tr > td {
+  padding: 10px 10px;
 }
 @media (min-width: 600px) {
-  .c-table__info > tbody > tr > td {
+  .c-table__infoday > tbody > tr > td {
     padding: 30px;
   }
+}
+.c-table__td {
+  border-bottom: 1px solid #807c7c;
 }
 
 .c-card__img {
@@ -268,6 +182,8 @@ li {
 
 .c-flex {
   display: flex;
+  align-items: center;
+  padding: 0 0 25px 15px;
 }
 @media (min-width: 600px) {
   .c-flex__header {
@@ -276,6 +192,7 @@ li {
 }
 .c-flex__menuset {
   display: flex;
+  justify-content: space-between;
 }
 .c-flex__reserve {
   display: flex;
@@ -299,6 +216,7 @@ li {
 .c-icon__pole {
   width: 122px;
   height: 64px;
+  margin: 0 -40px 0 -46px;
 }
 @media (min-width: 600px) {
   .c-icon__pole {
@@ -352,6 +270,38 @@ li {
   }
 }
 
+.c-name {
+  color: white;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+}
+.c-name__last {
+  color: white;
+  font-size: 3.2rem;
+}
+
+.c-price {
+  color: white;
+  font-size: 3.2rem;
+  text-align: right;
+  letter-spacing: -13px;
+  margin-right: 11px;
+  margin-bottom: 40px;
+}
+.c-price__last {
+  color: white;
+  font-size: 3.2rem;
+  text-align: right;
+  letter-spacing: -13px;
+  margin-right: -20px;
+}
+
+.c-wrapper {
+  margin: 10px -14.5px;
+  padding: 45px 42px 45px 14px;
+  background-color: black;
+}
+
 .p-content__info {
   width: 100%;
   padding: 30px 0 20px;
@@ -361,10 +311,30 @@ li {
 .p-mainvisual {
   height: 200px;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 @media (min-width: 600px) {
   .p-mainvisual {
     height: 800px;
   }
+}
+
+.p-businessday {
+  margin-bottom: 40px;
+}
+
+.p-info {
+  margin-bottom: 40px;
+}
+
+.p-pricemenu {
+  margin-bottom: 40px;
+}
+
+.u-span {
+  padding-left: 7px;
+}
+.u-span__last {
+  padding-left: 12px;
 }
 /*# sourceMappingURL=style.css.map */
