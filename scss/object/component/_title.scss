@@ -6,7 +6,38 @@
 
   &__serviceflow {
     margin: 53px 0 15px;
-    letter-spacing: 2.5px;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    padding: 1.5rem 2rem 1.5rem 130px;
+    border-top: 3px solid #000;
+    @include breakpoint(tablet) {
+      margin-top: 1px;
+    }
+    &::before {
+      position: absolute;
+      top: -150%;
+      left: -100px;
+      width: 200px;
+      height: 300%;
+      content: "";
+      -webkit-transform: rotate(25deg);
+      transform: rotate(25deg);
+      background: #000;
+    }
+    & span {
+      font-size: 40px;
+      font-size: 4rem;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      display: block;
+      padding-top: 3px;
+      padding-left: 1px;
+      color: #fff;
+      letter-spacing: -10px;
+    }
   }
 
   &__shopname {
@@ -14,7 +45,7 @@
   }
 
   &__reserve {
-   text-align: center;
+    text-align: center;
     letter-spacing: 7px;
     padding-top: 5px;
     &::after {
@@ -25,8 +56,7 @@
       background-color: #000000;
       position: absolute;
       bottom: 14px;
-      left: 50%
+      left: 50%;
     }
   }
- 
 }

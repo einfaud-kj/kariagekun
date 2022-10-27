@@ -20,7 +20,6 @@ body {
   min-width: 350px;
   width: 100%;
   overflow-x: hidden;
-  position: relative;
 }
 
 img,
@@ -69,23 +68,36 @@ h3 {
   width: 100%;
   bottom: 0;
 }
+@media (min-width: 600px) {
+  .l-footer {
+    display: none;
+  }
+}
 
 .l-header {
   display: none;
 }
 @media (min-width: 600px) {
   .l-header {
-    display: block;
+    display: flex;
     height: 125px;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 
 .l-main {
   margin-bottom: 145px;
 }
+@media (min-width: 600px) {
+  .l-main {
+    margin-bottom: 20px;
+  }
+}
 
 .c-button__net, .c-button__tel {
   width: 100%;
+  height: 20vh;
   border: 2px solid black;
 }
 
@@ -95,7 +107,39 @@ h3 {
 }
 .c-title__serviceflow {
   margin: 53px 0 15px;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 2rem 1.5rem 130px;
+  border-top: 3px solid #000;
+}
+@media (min-width: 600px) {
+  .c-title__serviceflow {
+    margin-top: 1px;
+  }
+}
+.c-title__serviceflow::before {
+  position: absolute;
+  top: -150%;
+  left: -100px;
+  width: 200px;
+  height: 300%;
+  content: "";
+  transform: rotate(25deg);
+  background: #000;
+}
+.c-title__serviceflow span {
+  font-size: 40px;
+  font-size: 4rem;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-top: 3px;
+  padding-left: 1px;
+  color: #fff;
+  letter-spacing: -10px;
 }
 .c-title__shopname {
   margin: 32px 0 13px 0;
@@ -123,6 +167,11 @@ h3 {
   letter-spacing: 6px;
   line-height: 2.5;
   margin-top: 10px;
+}
+@media (min-width: 1200px) {
+  .c-text__address, .c-text__tel {
+    margin: 15px 0;
+  }
 }
 .c-text__netreserve, .c-text__telreserve {
   letter-spacing: 2px;
@@ -153,49 +202,29 @@ h3 {
 }
 @media (min-width: 600px) {
   .c-inner {
-    margin: 0 110px 20px 310px;
+    margin: 0;
+  }
+}
+@media (min-width: 600px) {
+  .c-inner__whole {
+    margin: 0 2.8% 0 8.6%;
+  }
+}
+@media (min-width: 1200px) {
+  .c-inner__whole {
+    margin: 0 5.7% 0 17.2%;
   }
 }
 
-.c-address__dl {
-  padding: 30px;
-  color: white;
-  text-align: center;
-}
-.c-address__title {
-  float: left;
-  font-size: 1.2rem;
-  padding-bottom: 10px;
-}
-.c-address__text {
-  font-size: 1.2rem;
-  text-align: right;
-  padding-bottom: 10px;
-}
-.c-address__text > a {
-  color: white;
-}
-.c-address__googlemap {
-  width: 100%;
-  height: 100%;
-}
-.c-address__inner {
-  background-color: black;
-  text-align: center;
-  padding-bottom: 20px;
-}
-@media (min-width: 600px) {
-  .c-address__inner {
-    width: 70%;
+@media (min-width: 1200px) {
+  .c-address {
+    padding-left: 25px;
   }
 }
-.c-address__inner > small {
-  color: white;
-}
-@media (min-width: 600px) {
-  .c-address__div {
-    width: 100%;
-    height: 500px;
+@media (min-width: 1200px) {
+  .c-address__googlemap {
+    width: 70%;
+    height: 50vh;
   }
 }
 
@@ -211,19 +240,29 @@ h3 {
     font-size: 2.4rem;
   }
 }
-.c-table__infoday > tr:first-child, .c-table__infoday > td:first-child {
-  line-height: 1.4;
+@media (min-width: 1200px) {
+  .c-table__infoday {
+    font-size: 4.8rem;
+  }
 }
-.c-table__infoday > tbody > tr > td {
-  padding: 10px 10px;
+
+.c-table__td {
+  padding: 1.6vh 2.7vw;
 }
 @media (min-width: 600px) {
-  .c-table__infoday > tbody > tr > td {
+  .c-table__td {
+    padding: 2vh 2.5vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-table__td {
     padding: 30px;
   }
 }
-.c-table__td {
-  border-bottom: 1px solid #807c7c;
+@media (min-width: 600px) {
+  .c-table__td-title {
+    font-size: 2.2rem;
+  }
 }
 
 .c-card__img {
@@ -231,8 +270,7 @@ h3 {
 }
 @media (min-width: 600px) {
   .c-card__img {
-    width: 761px;
-    height: 655px;
+    height: auto;
   }
 }
 .c-card__text {
@@ -241,31 +279,85 @@ h3 {
   letter-spacing: 2px;
   font-weight: bold;
 }
+.c-card__flex {
+  background: rgba(38, 87, 255, 0.7882352941);
+}
+@media (min-width: 600px) {
+  .c-card__flex {
+    display: flex;
+  }
+}
+.c-card__flex-second {
+  background: rgba(38, 87, 255, 0.7882352941);
+}
+@media (min-width: 600px) {
+  .c-card__flex-second {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
 
 .c-flex__info, .c-flex__pricemenu, .c-flex__access {
   display: flex;
   align-items: center;
   padding-left: 3px;
-  margin: 0 110px 25px 0;
+  margin: 0 110px 40px 0;
   background: linear-gradient(92deg, #fff019, #fff);
+}
+@media (min-width: 600px) {
+  .c-flex__info, .c-flex__pricemenu, .c-flex__access {
+    width: 33vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-flex__info, .c-flex__pricemenu, .c-flex__access {
+    width: 25vw;
+  }
 }
 .c-flex__dayandtime {
   display: flex;
   align-items: center;
   padding-left: 3px;
-  margin: 0 50px 25px 0;
+  margin: 0 50px 40px 0;
   background: linear-gradient(92deg, #fff019, #fff);
+}
+@media (min-width: 600px) {
+  .c-flex__dayandtime {
+    width: 43vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-flex__dayandtime {
+    width: 30vw;
+  }
 }
 .c-flex__serviceflow {
   display: flex;
   align-items: center;
   padding-left: 3px;
-  margin: 0 10px 25px 0;
+  margin: 0 10px 40px 0;
   background: linear-gradient(92deg, #fff019, #fff);
+}
+@media (min-width: 600px) {
+  .c-flex__serviceflow {
+    width: 63vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-flex__serviceflow {
+    width: 40vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-flex__address {
+    display: flex;
+  }
 }
 @media (min-width: 600px) {
   .c-flex__header {
     display: flex;
+    margin-right: 15px;
+    align-items: center;
   }
 }
 .c-flex__menuset {
@@ -281,6 +373,7 @@ h3 {
   width: 52px;
   height: 92px;
   transform: rotate(41deg);
+  margin: 0 20px 0 45px;
 }
 .c-icon__scissors {
   width: 35px;
@@ -289,8 +382,8 @@ h3 {
 }
 @media (min-width: 600px) {
   .c-icon__scissors {
-    width: 75px;
-    height: 176px;
+    width: 43px;
+    height: 101px;
   }
 }
 .c-icon__pole {
@@ -302,8 +395,8 @@ h3 {
 }
 @media (min-width: 600px) {
   .c-icon__pole {
-    width: 145px;
-    height: 125px;
+    width: 120px;
+    height: 96px;
   }
 }
 .c-icon__chair {
@@ -313,13 +406,13 @@ h3 {
 }
 @media (min-width: 600px) {
   .c-icon__chair {
-    width: 145px;
-    height: 145px;
+    width: 115px;
+    height: 115px;
   }
 }
 
 .c-icon__netreserve, .c-icon__telreserve {
-  width: 50%;
+  width: 88.7px;
   height: auto;
   margin: 0 auto;
 }
@@ -400,6 +493,11 @@ h3 {
   bottom: -5px;
   left: calc(16% - 55px);
 }
+@media (min-width: 1200px) {
+  .c-subtitle__address::after, .c-subtitle__tel::after {
+    left: calc(22% - 55px);
+  }
+}
 
 .c-wrapper {
   margin: 10px -14.5px;
@@ -414,30 +512,28 @@ h3 {
 }
 
 .p-mainvisual {
-  height: 200px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin: 20px 0 60px 0;
 }
 @media (min-width: 600px) {
   .p-mainvisual {
-    height: 800px;
+    margin-top: 0;
   }
 }
 
 .p-businessday {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .p-info {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .p-pricemenu {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .p-serviceflow {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .u-span {

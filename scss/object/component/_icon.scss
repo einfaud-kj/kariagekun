@@ -1,51 +1,51 @@
 @use "./../../foundation/mixin" as *;
 
 .c-icon {
-    &__header {
+  &__header {
     width: 52px;
     height: 92px;
-    transform: rotate( 41deg );
-   
-}
-&__scissors {
+    transform: rotate(41deg);
+    margin: 0 20px 0 45px;
+  }
+  &__scissors {
     width: 35px;
     height: 82px;
     background: linear-gradient(92deg, #fff019, #fff);
-    @include breakpoint(tablet){
-        width: 75px;
-        height: 176px;
+    @include breakpoint(tablet) {
+      width: 43px;
+      height: 101px;
     }
-}
-&__pole {
+  }
+  &__pole {
     width: 122px;
     height: 64px;
-    margin:0 -40px 0 -46px;
+    margin: 0 -40px 0 -46px;
     background: linear-gradient(92deg, #fff019, #fff);
     background-position-x: 40px;
-    @include breakpoint(tablet){
-        width: 145px;
-        height: 125px;
+    @include breakpoint(tablet) {
+      width: 120px;
+      height: 96px;
     }
-}
-&__chair {
+  }
+  &__chair {
     width: 69px;
     height: 69px;
     background: linear-gradient(92deg, #fff019, #fff);
-    @include breakpoint(tablet){
-        width: 145px;
-        height: 145px;
+    @include breakpoint(tablet) {
+      width: 115px;
+      height: 115px;
     }
-}
+  }
 }
 
 .c-icon {
-&__netreserve,
-&__telreserve{
-width: 50%;
-height: auto;
-margin: 0 auto;
-@include breakpoint(tablet) {
-    display: none;
-}
-}
+  &__netreserve,
+  &__telreserve {
+    width: 88.7px;
+    height: auto;
+    margin: 0 auto;
+    @include breakpoint(tablet) {
+      display: none;
+    }
+  }
 }

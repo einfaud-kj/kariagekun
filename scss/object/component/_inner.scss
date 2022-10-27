@@ -3,6 +3,16 @@
 .c-inner {
   margin: 20px 14.5px 0;
   @include breakpoint(tablet) {
-    margin: 0 110px 20px 310px;
+    margin: 0;
   }
+ 
+
+  &__whole {
+    @include breakpoint(tablet) {
+      margin: 0 2.8% 0 8.6%;
+    }
+    @include breakpoint(pc) {
+    margin: 0 5.7% 0 17.2%;
+  }
+}
 }

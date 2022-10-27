@@ -1,3 +1,8 @@
+@use "./../foundation/mixin" as *;
+
 .l-main {
-    margin-bottom: 145px;
+  margin-bottom: 145px;
+  @include breakpoint(tablet) {
+    margin-bottom: 20px;
+  }
 }

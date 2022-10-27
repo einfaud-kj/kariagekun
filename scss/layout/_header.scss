@@ -1,9 +1,12 @@
 @use "./../foundation/mixin" as *;
 
 .l-header {
- display: none;
+  display: none;
   @include breakpoint(tablet) {
-    display: block;
+    display: flex;
+
     height: 125px;
+    align-items: center;
+    justify-content: flex-end;
   }
 }

@@ -1,18 +1,31 @@
 @use "./../../foundation/mixin" as *;
 
 .c-card {
-    &__img{
-  height: 300px;
+  &__img {
+    height: 300px;
     @include breakpoint(tablet) {
-        width: 761px;
-        height: 655px;
+      height: auto;
     }
-}
+  }
 
-    &__text {
-        margin: 0 10px 0;
-        line-height: 3;
-        letter-spacing: 2px;
-        font-weight: bold;
+  &__text {
+    margin: 0 10px 0;
+    line-height: 3;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  &__flex {
+    background: #2657ffc9;
+    @include breakpoint(tablet) {
+      display: flex;
     }
+    &-second {
+      background: #2657ffc9;
+      @include breakpoint(tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }

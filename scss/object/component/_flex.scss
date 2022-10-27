@@ -1,46 +1,71 @@
 @use "./../../foundation/mixin" as *;
 
 .c-flex {
-    &__info,    
-    &__pricemenu,   
-    &__access {
+  &__info,
+  &__pricemenu,
+  &__access {
     display: flex;
     align-items: center;
     padding-left: 3px;
-    margin:0 110px 25px 0;
+    margin: 0 110px 40px 0;
     background: linear-gradient(92deg, #fff019, #fff);
+    @include breakpoint(tablet) {
+      width: 33vw;
     }
+    @include breakpoint(pc) {
+      width: 25vw;
+    }
+  }
 
-    &__dayandtime {
-        display: flex;
+  &__dayandtime {
+    display: flex;
     align-items: center;
     padding-left: 3px;
-    margin:0 50px 25px 0;
+    margin: 0 50px 40px 0;
     background: linear-gradient(92deg, #fff019, #fff);
+    @include breakpoint(tablet) {
+      width: 43vw;
     }
-
-    &__serviceflow {
-        display: flex;
-        align-items: center;
-        padding-left: 3px;
-        margin:0 10px 25px 0;
-        background: linear-gradient(92deg, #fff019, #fff);
+    @include breakpoint(pc) {
+      width: 30vw;
     }
+  }
 
-    &__header {
-        @include breakpoint(tablet) {
-            display: flex;
-
-        }
+  &__serviceflow {
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    margin: 0 10px 40px 0;
+    background: linear-gradient(92deg, #fff019, #fff);
+    @include breakpoint(tablet) {
+      width: 63vw;
     }
-
-    &__menuset {
-        display: flex;
-        justify-content: space-between;
+    @include breakpoint(pc) {
+      width: 40vw;
     }
+  }
 
-    &__reserve {
-        display: flex;
-        justify-content: space-around;
+  &__address {
+    @include breakpoint(pc) {
+      display: flex;
     }
+  }
+
+  &__header {
+    @include breakpoint(tablet) {
+      display: flex;
+      margin-right: 15px;
+      align-items: center;
+    }
+  }
+
+  &__menuset {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__reserve {
+    display: flex;
+    justify-content: space-around;
+  }
 }
