@@ -159,9 +159,22 @@ h3 {
   bottom: 14px;
   left: 50%;
 }
+.c-title__netreserve, .c-title__telreserve {
+  letter-spacing: 10px;
+}
 
 .c-text__info {
   padding-bottom: 15px;
+}
+@media (min-width: 600px) {
+  .c-text__info {
+    margin-left: 11vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-text__info {
+    font-size: 2.4rem;
+  }
 }
 .c-text__address, .c-text__tel {
   letter-spacing: 6px;
@@ -240,11 +253,6 @@ h3 {
     font-size: 2.4rem;
   }
 }
-@media (min-width: 1200px) {
-  .c-table__infoday {
-    font-size: 4.8rem;
-  }
-}
 
 .c-table__td {
   padding: 1.6vh 2.7vw;
@@ -262,6 +270,12 @@ h3 {
 @media (min-width: 600px) {
   .c-table__td-title {
     font-size: 2.2rem;
+    padding-right: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-table__td-title {
+    font-size: 3.2rem;
   }
 }
 
@@ -458,9 +472,22 @@ h3 {
   font-size: 3.2rem;
   margin-bottom: 40px;
 }
+.c-name__twoletters {
+  color: white;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  letter-spacing: 20px;
+}
+.c-name__threeletters {
+  color: white;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  letter-spacing: 15px;
+}
 .c-name__last {
   color: white;
   font-size: 3.2rem;
+  letter-spacing: 15px;
 }
 
 .c-price {
@@ -491,18 +518,25 @@ h3 {
   background-color: #000000;
   position: absolute;
   bottom: -5px;
-  left: calc(16% - 55px);
-}
-@media (min-width: 1200px) {
-  .c-subtitle__address::after, .c-subtitle__tel::after {
-    left: calc(22% - 55px);
-  }
+  left: 0;
 }
 
 .c-wrapper {
   margin: 10px -14.5px;
-  padding: 45px 42px 45px 14px;
+  padding: 45px 12vw 45px 4vw;
   background-color: black;
+}
+@media (min-width: 600px) {
+  .c-wrapper {
+    padding: 45px 12vw 45px 12vw;
+  }
+}
+@media (min-width: 1200px) {
+  .c-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0;
+  }
 }
 
 .p-content__info {

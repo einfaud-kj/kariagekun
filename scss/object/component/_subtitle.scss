@@ -16,9 +16,6 @@
     background-color: #000000;
     position: absolute;
     bottom: -5px;
-    left: calc(16% - 55px);
-    @include breakpoint(pc) {
-      left: calc(22% - 55px);
-    }
+    left: 0;
   }
 }

@@ -3,6 +3,12 @@
 .c-text {
   &__info {
     padding-bottom: 15px;
+    @include breakpoint(tablet) {
+      margin-left: 11vw;
+    }
+    @include breakpoint(pc) {
+      font-size: 2.4rem;
+    }
   }
 
   &__address,

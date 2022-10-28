@@ -1,12 +1,24 @@
 @use "./../../foundation/mixin" as *;
 
 .c-name {
+  color: white;
+  font-size: 3.2rem;
+  margin-bottom: 40px;
+  &__twoletters {
     color: white;
     font-size: 3.2rem;
     margin-bottom: 40px;
-    &__last {
-        color: white;
+    letter-spacing: 20px;
+  }
+  &__threeletters {
+    color: white;
     font-size: 3.2rem;
-    
-    }
+    margin-bottom: 40px;
+    letter-spacing: 15px;
+  }
+  &__last {
+    color: white;
+    font-size: 3.2rem;
+    letter-spacing: 15px;
+  }
 }

@@ -1,7 +1,15 @@
 @use "./../../foundation/mixin" as *;
 
 .c-wrapper {
-    margin: 10px -14.5px;
-    padding: 45px 42px 45px 14px ;
-    background-color: black;
+  margin: 10px -14.5px;
+  padding: 45px 12vw 45px 4vw;
+  background-color: black;
+  @include breakpoint(tablet) {
+    padding: 45px 12vw 45px 12vw;
+  }
+  @include breakpoint(pc) {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px 0;
+  }
 }
