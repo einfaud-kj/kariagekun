@@ -27,3 +27,27 @@
     text-align: center;
   }
 }
+
+.c-text__tategaki {
+  display: none;
+  @include breakpoint(tablet) {
+    display: block;
+    position: absolute;
+    font-size: 1.6rem;
+    left: 1.5vw;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: "Hannari";
+    white-space: nowrap;
+    top: 70px;
+  }
+  @include breakpoint(pc) {
+    position: absolute;
+    left: 95px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    font-family: "Hannari";
+    white-space: nowrap;
+    top: 130px;
+  }
+}

@@ -1,32 +1,32 @@
 @use "./../../foundation/mixin" as *;
 
 .c-image {
-    &__right {
-        display: flex;
-        justify-content: flex-end;
-    }
-    &__right >img{
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__right > img {
     width: 96px;
     height: 171px;
-    transform: rotate( -129deg );
-    margin: 30px 40px -25px 0;
+    transform: rotate(-129deg);
+    margin: 30px 12vw -25px 0;
 
     @include breakpoint(tablet) {
-        width: 158px;
-        height: 281px;
-        transform: rotate( -129deg );
+      width: 158px;
+      height: 281px;
+      transform: rotate(-129deg);
     }
-}
-&__left >img {
+  }
+  &__left > img {
     width: 96px;
     height: 171px;
-    transform: rotate( -232deg );
-    margin: 30px 0 -25px 50px;
+    transform: rotate(-232deg);
+    margin: 30px 0 -25px 13vw;
 
     @include breakpoint(tablet) {
-        width: 158px;
-        height: 281px;
-        transform: rotate( -232deg );
+      width: 158px;
+      height: 281px;
+      transform: rotate(-232deg);
     }
-}
+  }
 }

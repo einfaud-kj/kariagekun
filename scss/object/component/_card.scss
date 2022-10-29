@@ -1,30 +1,78 @@
 @use "./../../foundation/mixin" as *;
 
 .c-card {
+  &__img-02 {
+    width: 94%;
+  }
   &__img {
-    height: 300px;
     @include breakpoint(tablet) {
-      height: auto;
+      width: initial;
+    }
+  }
+  &__img img {
+    height: 350px;
+    @include breakpoint(tablet) {
+      height: 550px;
+      max-width: 658px;
+    }
+    @include breakpoint(pc) {
+      max-width: 850px;
+    }
+  }
+  &__img-02 img {
+    height: 350px;
+    object-position: bottom;
+    @include breakpoint(tablet) {
+      height: 550px;
+      max-width: 658px;
+    }
+    @include breakpoint(pc) {
+      max-width: 750px;
     }
   }
 
   &__text {
-    margin: 0 10px 0;
+    margin: 0 3vw;
     line-height: 3;
     letter-spacing: 2px;
     font-weight: bold;
   }
 
-  &__flex {
+  &__article {
     background: #2657ffc9;
-    @include breakpoint(tablet) {
+    max-width: 658px;
+    width: 100%;
+    @include breakpoint(pc) {
+      width: 315px;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(pc) {
       display: flex;
+      flex-direction: row;
+      align-items: initial;
+      justify-content: center;
     }
     &-second {
-      background: #2657ffc9;
-      @include breakpoint(tablet) {
+      @include breakpoint(pc) {
         display: flex;
         flex-direction: row-reverse;
+        justify-content: flex-end;
+      }
+    }
+    &-third {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      @include breakpoint(pc) {
+        display: flex;
+        flex-direction: row;
+        align-items: initial;
+        justify-content: flex-end;
       }
     }
   }

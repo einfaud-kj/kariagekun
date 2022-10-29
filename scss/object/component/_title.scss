@@ -4,30 +4,28 @@
   letter-spacing: 3px;
   padding-left: 10px;
 
-  &__serviceflow {
-    margin: 53px 0 15px;
-    letter-spacing: 0.5px;
+  &__serviceflow-01,
+  &__serviceflow-02,
+  &__serviceflow-03 {
+    margin: 20px 0 15px;
+    letter-spacing: 4.5px;
     position: relative;
     overflow: hidden;
     padding: 1.5rem 2rem 1.5rem 130px;
     border-top: 3px solid #000;
-    @include breakpoint(tablet) {
+    @include breakpoint(pc) {
+      -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
       margin-top: 1px;
-    }
-    &::before {
-      position: absolute;
-      top: -150%;
-      left: -100px;
-      width: 200px;
-      height: 300%;
-      content: "";
-      -webkit-transform: rotate(25deg);
-      transform: rotate(25deg);
-      background: #000;
+      letter-spacing: 16px;
+      padding: 1.5rem 8rem 1.5rem 156px;
+      font-size: 2.4rem;
     }
     & span {
       font-size: 40px;
       font-size: 4rem;
+      -ms-writing-mode: initial;
+      writing-mode: initial;
       position: absolute;
       z-index: 1;
       top: 0;
@@ -37,6 +35,36 @@
       padding-left: 1px;
       color: #fff;
       letter-spacing: -10px;
+    }
+  }
+  &__serviceflow-01::before,
+  &__serviceflow-02::before {
+    position: absolute;
+    top: -150%;
+    left: -100px;
+    width: 200px;
+    height: 300%;
+    content: "";
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    background: #000;
+    @include breakpoint(pc) {
+      width: 230px;
+    }
+  }
+
+  &__serviceflow-03::before {
+    position: absolute;
+    top: -150%;
+    left: -100px;
+    width: 200px;
+    height: 300%;
+    content: "";
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    background: #000;
+    @include breakpoint(pc) {
+      width: 215px;
     }
   }
 
@@ -61,6 +89,7 @@
   }
   &__netreserve,
   &__telreserve {
+    font-size: 2rem;
     letter-spacing: 10px;
   }
 }

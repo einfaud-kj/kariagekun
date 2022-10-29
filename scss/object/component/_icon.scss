@@ -2,8 +2,8 @@
 
 .c-icon {
   &__header {
-    width: 52px;
-    height: 92px;
+    width: 32px;
+    height: 62px;
     transform: rotate(41deg);
     margin: 0 20px 0 45px;
   }
@@ -17,14 +17,12 @@
     }
   }
   &__pole {
-    width: 122px;
-    height: 64px;
-    margin: 0 -40px 0 -46px;
+    width: 38px;
+    height: 77px;
     background: linear-gradient(92deg, #fff019, #fff);
-    background-position-x: 40px;
     @include breakpoint(tablet) {
-      width: 120px;
-      height: 96px;
+      width: 50px;
+      height: 104px;
     }
   }
   &__chair {
@@ -46,6 +44,24 @@
     margin: 0 auto;
     @include breakpoint(tablet) {
       display: none;
+    }
+  }
+  &__anime {
+    display: none;
+    @include breakpoint(tablet) {
+      display: block;
+      width: 30px;
+      position: fixed;
+      top: 0;
+      left: 1.5vw;
+      z-index: 1;
+    }
+    @include breakpoint(pc) {
+      width: 55px;
+      position: fixed;
+      top: 0;
+      left: 80px;
+      z-index: 1;
     }
   }
 }

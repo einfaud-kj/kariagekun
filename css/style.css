@@ -26,7 +26,7 @@ img,
 video,
 object {
   width: 100%;
-  height: 100%;
+  height: auto;
   border: none;
   display: block;
   -o-object-fit: cover;
@@ -52,14 +52,6 @@ a:hover img {
 
 li {
   list-style: none;
-}
-
-h2 {
-  font-size: 3.2rem;
-}
-
-h3 {
-  font-size: 2.4rem;
 }
 
 .l-footer {
@@ -105,32 +97,27 @@ h3 {
   letter-spacing: 3px;
   padding-left: 10px;
 }
-.c-title__serviceflow {
-  margin: 53px 0 15px;
-  letter-spacing: 0.5px;
+.c-title__serviceflow-01, .c-title__serviceflow-02, .c-title__serviceflow-03 {
+  margin: 20px 0 15px;
+  letter-spacing: 4.5px;
   position: relative;
   overflow: hidden;
   padding: 1.5rem 2rem 1.5rem 130px;
   border-top: 3px solid #000;
 }
-@media (min-width: 600px) {
-  .c-title__serviceflow {
+@media (min-width: 1200px) {
+  .c-title__serviceflow-01, .c-title__serviceflow-02, .c-title__serviceflow-03 {
+    writing-mode: vertical-rl;
     margin-top: 1px;
+    letter-spacing: 16px;
+    padding: 1.5rem 8rem 1.5rem 156px;
+    font-size: 2.4rem;
   }
 }
-.c-title__serviceflow::before {
-  position: absolute;
-  top: -150%;
-  left: -100px;
-  width: 200px;
-  height: 300%;
-  content: "";
-  transform: rotate(25deg);
-  background: #000;
-}
-.c-title__serviceflow span {
+.c-title__serviceflow-01 span, .c-title__serviceflow-02 span, .c-title__serviceflow-03 span {
   font-size: 40px;
   font-size: 4rem;
+  writing-mode: initial;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -140,6 +127,36 @@ h3 {
   padding-left: 1px;
   color: #fff;
   letter-spacing: -10px;
+}
+.c-title__serviceflow-01::before, .c-title__serviceflow-02::before {
+  position: absolute;
+  top: -150%;
+  left: -100px;
+  width: 200px;
+  height: 300%;
+  content: "";
+  transform: rotate(25deg);
+  background: #000;
+}
+@media (min-width: 1200px) {
+  .c-title__serviceflow-01::before, .c-title__serviceflow-02::before {
+    width: 230px;
+  }
+}
+.c-title__serviceflow-03::before {
+  position: absolute;
+  top: -150%;
+  left: -100px;
+  width: 200px;
+  height: 300%;
+  content: "";
+  transform: rotate(25deg);
+  background: #000;
+}
+@media (min-width: 1200px) {
+  .c-title__serviceflow-03::before {
+    width: 215px;
+  }
 }
 .c-title__shopname {
   margin: 32px 0 13px 0;
@@ -160,6 +177,7 @@ h3 {
   left: 50%;
 }
 .c-title__netreserve, .c-title__telreserve {
+  font-size: 2rem;
   letter-spacing: 10px;
 }
 
@@ -189,6 +207,32 @@ h3 {
 .c-text__netreserve, .c-text__telreserve {
   letter-spacing: 2px;
   text-align: center;
+}
+
+.c-text__tategaki {
+  display: none;
+}
+@media (min-width: 600px) {
+  .c-text__tategaki {
+    display: block;
+    position: absolute;
+    font-size: 1.6rem;
+    left: 1.5vw;
+    writing-mode: vertical-rl;
+    font-family: "Hannari";
+    white-space: nowrap;
+    top: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-text__tategaki {
+    position: absolute;
+    left: 95px;
+    writing-mode: vertical-rl;
+    font-family: "Hannari";
+    white-space: nowrap;
+    top: 130px;
+  }
 }
 
 .c-menu__priceboard {
@@ -279,35 +323,91 @@ h3 {
   }
 }
 
-.c-card__img {
-  height: 300px;
+.c-card__img-02 {
+  width: 94%;
 }
 @media (min-width: 600px) {
   .c-card__img {
-    height: auto;
+    width: initial;
+  }
+}
+.c-card__img img {
+  height: 350px;
+}
+@media (min-width: 600px) {
+  .c-card__img img {
+    height: 550px;
+    max-width: 658px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-card__img img {
+    max-width: 850px;
+  }
+}
+.c-card__img-02 img {
+  height: 350px;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+@media (min-width: 600px) {
+  .c-card__img-02 img {
+    height: 550px;
+    max-width: 658px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-card__img-02 img {
+    max-width: 750px;
   }
 }
 .c-card__text {
-  margin: 0 10px 0;
+  margin: 0 3vw;
   line-height: 3;
   letter-spacing: 2px;
   font-weight: bold;
 }
-.c-card__flex {
+.c-card__article {
   background: rgba(38, 87, 255, 0.7882352941);
+  max-width: 658px;
+  width: 100%;
 }
-@media (min-width: 600px) {
-  .c-card__flex {
-    display: flex;
+@media (min-width: 1200px) {
+  .c-card__article {
+    width: 315px;
   }
 }
-.c-card__flex-second {
-  background: rgba(38, 87, 255, 0.7882352941);
+.c-card__flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 1200px) {
+  .c-card__flex {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
   .c-card__flex-second {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+.c-card__flex-third {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media (min-width: 1200px) {
+  .c-card__flex-third {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: flex-end;
   }
 }
 
@@ -337,7 +437,7 @@ h3 {
 }
 @media (min-width: 600px) {
   .c-flex__dayandtime {
-    width: 43vw;
+    width: 50vw;
   }
 }
 @media (min-width: 1200px) {
@@ -384,8 +484,8 @@ h3 {
 }
 
 .c-icon__header {
-  width: 52px;
-  height: 92px;
+  width: 32px;
+  height: 62px;
   transform: rotate(41deg);
   margin: 0 20px 0 45px;
 }
@@ -401,16 +501,14 @@ h3 {
   }
 }
 .c-icon__pole {
-  width: 122px;
-  height: 64px;
-  margin: 0 -40px 0 -46px;
+  width: 38px;
+  height: 77px;
   background: linear-gradient(92deg, #fff019, #fff);
-  background-position-x: 40px;
 }
 @media (min-width: 600px) {
   .c-icon__pole {
-    width: 120px;
-    height: 96px;
+    width: 50px;
+    height: 104px;
   }
 }
 .c-icon__chair {
@@ -435,6 +533,28 @@ h3 {
     display: none;
   }
 }
+.c-icon__anime {
+  display: none;
+}
+@media (min-width: 600px) {
+  .c-icon__anime {
+    display: block;
+    width: 30px;
+    position: fixed;
+    top: 0;
+    left: 1.5vw;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .c-icon__anime {
+    width: 55px;
+    position: fixed;
+    top: 0;
+    left: 80px;
+    z-index: 1;
+  }
+}
 
 .c-image__right {
   display: flex;
@@ -444,7 +564,7 @@ h3 {
   width: 96px;
   height: 171px;
   transform: rotate(-129deg);
-  margin: 30px 40px -25px 0;
+  margin: 30px 12vw -25px 0;
 }
 @media (min-width: 600px) {
   .c-image__right > img {
@@ -457,7 +577,7 @@ h3 {
   width: 96px;
   height: 171px;
   transform: rotate(-232deg);
-  margin: 30px 0 -25px 50px;
+  margin: 30px 0 -25px 13vw;
 }
 @media (min-width: 600px) {
   .c-image__left > img {
