@@ -4,7 +4,8 @@
   &__net,
   &__tel {
     width: 100%;
-    height: 20vh;
     border: 2px solid black;
+    position: relative;
+    z-index: 3;
   }
 }

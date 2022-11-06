@@ -67,5 +67,7 @@
   &__reserve {
     display: flex;
     justify-content: space-around;
+    position: relative;
+    z-index: 2;
   }
 }

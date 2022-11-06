@@ -59,6 +59,7 @@ li {
   position: fixed;
   width: 100%;
   bottom: 0;
+  z-index: 1;
 }
 @media (min-width: 600px) {
   .l-footer {
@@ -89,8 +90,9 @@ li {
 
 .c-button__net, .c-button__tel {
   width: 100%;
-  height: 20vh;
   border: 2px solid black;
+  position: relative;
+  z-index: 3;
 }
 
 .c-title {
@@ -104,6 +106,7 @@ li {
   overflow: hidden;
   padding: 1.5rem 2rem 1.5rem 130px;
   border-top: 3px solid #000;
+  z-index: 0;
 }
 @media (min-width: 1200px) {
   .c-title__serviceflow-01, .c-title__serviceflow-02, .c-title__serviceflow-03 {
@@ -119,7 +122,7 @@ li {
   font-size: 4rem;
   writing-mode: initial;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
   display: block;
@@ -222,6 +225,7 @@ li {
     font-family: "Hannari";
     white-space: nowrap;
     top: 70px;
+    letter-spacing: 3px;
   }
 }
 @media (min-width: 1200px) {
@@ -232,6 +236,7 @@ li {
     font-family: "Hannari";
     white-space: nowrap;
     top: 130px;
+    letter-spacing: 1px;
   }
 }
 
@@ -324,7 +329,7 @@ li {
 }
 
 .c-card__img-02 {
-  width: 94%;
+  width: 100%;
 }
 @media (min-width: 600px) {
   .c-card__img {
@@ -481,6 +486,8 @@ li {
 .c-flex__reserve {
   display: flex;
   justify-content: space-around;
+  position: relative;
+  z-index: 2;
 }
 
 .c-icon__header {
@@ -524,7 +531,7 @@ li {
 }
 
 .c-icon__netreserve, .c-icon__telreserve {
-  width: 88.7px;
+  width: 70px;
   height: auto;
   margin: 0 auto;
 }
@@ -657,6 +664,75 @@ li {
     justify-content: space-around;
     padding: 45px 0;
   }
+}
+
+.fadeLeft {
+  -webkit-animation-name: fadeLeftAnime;
+          animation-name: fadeLeftAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 右から */
+.fadeRight {
+  -webkit-animation-name: fadeRightAnime;
+          animation-name: fadeRightAnime;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+.c-fade__LeftTrigger,
+.fadeRightTrigger {
+  opacity: 0;
 }
 
 .p-content__info {

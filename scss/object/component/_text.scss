@@ -40,6 +40,7 @@
     font-family: "Hannari";
     white-space: nowrap;
     top: 70px;
+    letter-spacing: 3px;
   }
   @include breakpoint(pc) {
     position: absolute;
@@ -49,5 +50,6 @@
     font-family: "Hannari";
     white-space: nowrap;
     top: 130px;
+    letter-spacing: 1px;
   }
 }

@@ -13,6 +13,7 @@
     overflow: hidden;
     padding: 1.5rem 2rem 1.5rem 130px;
     border-top: 3px solid #000;
+    z-index: 0;
     @include breakpoint(pc) {
       -ms-writing-mode: tb-rl;
       writing-mode: vertical-rl;
@@ -27,7 +28,7 @@
       -ms-writing-mode: initial;
       writing-mode: initial;
       position: absolute;
-      z-index: 1;
+      z-index: 0;
       top: 0;
       left: 0;
       display: block;

@@ -1,14 +1,32 @@
-jQuery(function ($) {
-  $(window).resize(function () {
-    if (window.matchMedia("(min-width: 1201px)").matches) {
-      $(".nav-body").removeAttr("style");
-      $(".menu-btn").removeClass("is-open");
+// 動きのきっかけの起点となるアニメーションの名前を定義
+
+function fadeAnime() {
+  $(".fadeLeftTrigger").each(function () {
+    //fadeLeftTriggerというクラス名が
+    var elemPos = $(this).offset().top - 50; //要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("fadeLeft"); // 画面内に入ったらfadeLeftというクラス名を追記
+    } else {
+      $(this).removeClass("fadeLeft"); // 画面外に出たらfadeLeftというクラス名を外す
     }
   });
 
-  $(".js-hamburger").on("click", function () {
-    $(this).toggleClass("is-open");
-    $(".nav-body").toggleClass("open");
-    $(".nav-body").slideToggle("fast");
+  $(".fadeRightTrigger").each(function () {
+    //fadeRightTriggerというクラス名が
+    var elemPos = $(this).offset().top - 50; //要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("fadeRight"); // 画面内に入ったらfadeRightというクラス名を追記
+    } else {
+      $(this).removeClass("fadeRight"); // 画面外に出たらfadeRightというクラス名を外す
+    }
   });
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+  fadeAnime();
 });
