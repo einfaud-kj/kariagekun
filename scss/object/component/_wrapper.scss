@@ -5,11 +5,12 @@
   padding: 45px 12vw 45px 4vw;
   background-color: black;
   @include breakpoint(tablet) {
-    padding: 45px 12vw 45px 12vw;
+    padding: 45px 12vw;
   }
   @include breakpoint(pc) {
     display: flex;
     justify-content: space-around;
-    padding: 45px 0;
+    padding: 45px 0 0;
+    margin: 10px 50px;
   }
 }

@@ -73,7 +73,7 @@ li {
 @media (min-width: 600px) {
   .l-header {
     display: flex;
-    height: 125px;
+    height: 100px;
     align-items: center;
     justify-content: flex-end;
   }
@@ -180,7 +180,7 @@ li {
   left: 50%;
 }
 .c-title__netreserve, .c-title__telreserve {
-  font-size: 2rem;
+  font-size: 1.6rem;
   letter-spacing: 10px;
 }
 
@@ -194,7 +194,7 @@ li {
 }
 @media (min-width: 1200px) {
   .c-text__info {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
   }
 }
 .c-text__address, .c-text__tel {
@@ -299,7 +299,7 @@ li {
 }
 @media (min-width: 600px) {
   .c-table__infoday {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -324,7 +324,7 @@ li {
 }
 @media (min-width: 1200px) {
   .c-table__td-title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -426,11 +426,12 @@ li {
 @media (min-width: 600px) {
   .c-flex__info, .c-flex__pricemenu, .c-flex__access {
     width: 33vw;
+    margin-left: 20px;
   }
 }
 @media (min-width: 1200px) {
   .c-flex__info, .c-flex__pricemenu, .c-flex__access {
-    width: 25vw;
+    width: 11vw;
   }
 }
 .c-flex__dayandtime {
@@ -443,11 +444,12 @@ li {
 @media (min-width: 600px) {
   .c-flex__dayandtime {
     width: 50vw;
+    margin-left: 20px;
   }
 }
 @media (min-width: 1200px) {
   .c-flex__dayandtime {
-    width: 30vw;
+    width: 17vw;
   }
 }
 .c-flex__serviceflow {
@@ -460,11 +462,12 @@ li {
 @media (min-width: 600px) {
   .c-flex__serviceflow {
     width: 63vw;
+    margin-left: 20px;
   }
 }
 @media (min-width: 1200px) {
   .c-flex__serviceflow {
-    width: 40vw;
+    width: 23vw;
   }
 }
 @media (min-width: 1200px) {
@@ -503,8 +506,8 @@ li {
 }
 @media (min-width: 600px) {
   .c-icon__scissors {
-    width: 43px;
-    height: 101px;
+    width: 23px;
+    height: 60px;
   }
 }
 .c-icon__pole {
@@ -514,8 +517,8 @@ li {
 }
 @media (min-width: 600px) {
   .c-icon__pole {
-    width: 50px;
-    height: 104px;
+    width: 30px;
+    height: 60px;
   }
 }
 .c-icon__chair {
@@ -525,8 +528,8 @@ li {
 }
 @media (min-width: 600px) {
   .c-icon__chair {
-    width: 115px;
-    height: 115px;
+    width: 60px;
+    height: 60px;
   }
 }
 
@@ -596,24 +599,24 @@ li {
 
 .c-name {
   color: white;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   margin-bottom: 40px;
 }
 .c-name__twoletters {
   color: white;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   margin-bottom: 40px;
   letter-spacing: 20px;
 }
 .c-name__threeletters {
   color: white;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   margin-bottom: 40px;
   letter-spacing: 15px;
 }
 .c-name__last {
   color: white;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   letter-spacing: 15px;
 }
 
@@ -655,14 +658,15 @@ li {
 }
 @media (min-width: 600px) {
   .c-wrapper {
-    padding: 45px 12vw 45px 12vw;
+    padding: 45px 12vw;
   }
 }
 @media (min-width: 1200px) {
   .c-wrapper {
     display: flex;
     justify-content: space-around;
-    padding: 45px 0;
+    padding: 45px 0 0;
+    margin: 10px 50px;
   }
 }
 
